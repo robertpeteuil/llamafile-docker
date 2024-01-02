@@ -26,4 +26,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: 'robpco/llamafile:${{ github.event.release.tag_name }}'
+          tags: '${{ vars.IMAGE_NAME }}:${{ github.event.release.tag_name }}'
